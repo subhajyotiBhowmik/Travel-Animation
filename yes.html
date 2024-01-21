@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="yes.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </head>
+  <body>
+    <div id="message">Yay! Let's go out!</div>
+    <div id="confetti"></div>
+
+    <script>
+      particlesJS("confetti", {
+        particles: {
+          number: { value: 50 },
+          color: { value: "#4caf50" },
+          shape: { type: "circle" },
+          size: { value: 3 },
+          move: { enable: true, speed: 3 },
+          opacity: { value: 0.7, random: true },
+        },
+        interactivity: {
+          events: { onhover: { enable: true, mode: "repulse" } },
+        },
+      });
+    </script>
+  </body>
+</html>
